@@ -1,0 +1,8 @@
+<h2>Welcome to the front-page of the internet.</h2>
+
+<div *ngFor="let post of posts" (click)="goToDetailPage(post)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{post.title}}</em> - {{post.author}}</h3>
+    <h5>{{post.category}}</h5>
+  </div>
+</div>
